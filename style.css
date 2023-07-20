@@ -1,0 +1,91 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+button
+{
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    background-color: #999;
+    color: white;
+}
+
+#calendar
+{
+    width: 50vw;
+
+    margin: 15px auto;
+    border: 1px solid;
+}
+
+.month
+{
+    padding: 3rem 2rem 2rem;
+    background: #555555;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    list-style: none;
+}
+.month li
+{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.month li.yearname
+{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.weekdays
+{
+    padding: 1rem 0;
+    background-color: #dddddd;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+}
+.weekdays li
+{
+    display: inline-block;
+    flex: 0 0 calc(100% / 7);
+    text-align: center;
+}
+.days
+{
+    padding: 1rem 0;
+    background-color: #eeeeee;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: flex-start;
+    height: 14rem;
+}
+.days li
+{
+    padding: 0.5rem;
+    list-style: none;
+    display: inline-block;
+    flex: 0 0 calc(100% / 7);
+    text-align: center;
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1rem;
+}
+.days li.datenow
+{
+    color: #000;
+    font-weight: 700;
+}
